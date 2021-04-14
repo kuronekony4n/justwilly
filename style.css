@@ -1,0 +1,67 @@
+body {
+    background-color: #202040;
+}
+
+h5 {
+    color: #ffbd69;
+}
+
+.name {
+    color: #ffbd69;
+}
+
+.love {
+    color: #343a40 !important;
+}
+
+.media-body>p,
+.footer>h6 {
+    color: aqua;
+}
+
+img.m-3 {
+    border-radius: 10px;
+}
+
+i {
+    margin: 0px 5px;
+}
+
+.banner>a>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.skin {
+    background: url(bg-skin.png) repeat;
+    background-color: #202040;
+    background-blend-mode: overlay;
+    background-size: 220px;
+    border-radius: 10px;
+    border: 1px solid #ffbd69;
+    padding-bottom: 10px;
+}
+
+.skin>a[role=button] {
+    max-width: 100px;
+}
+
+
+/*----------------- Mail-------------------- */
+
+#email {
+    text-decoration: none;
+    float: right;
+    color: #6a9fd4;
+}
+
+.footer {
+    margin-top: 5% !important;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 479px) {
+    .footer {
+        margin-top: 35% !important;
+    }
+}
