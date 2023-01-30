@@ -1,0 +1,43 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+<style>
+    html {
+        overflow: auto;
+    }
+    
+    html,
+    body,
+    iframe {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        border: none;
+    }
+    
+    .container {
+        display: block;
+        width: 100%;
+        border: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+<script src="https://unpkg.com/plyr@3"></script>
+<script src="https://s3.amazonaws.com/appforest_uf/f1675075481234x194359648305191240/plyr-hls.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> sa
+<div class="container">
+    <video id="videoplayer" controls crossorigin playsinline>
+  </video>
+</div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoUrl = urlParams.get('url');
+
+    const video = document.getElementById('videoplayer');
+    const source = document.createElement('source');
+    source.src = videoUrl;
+    source.type = 'application/x-mpegURL';
+    video.appendChild(source);
+</script>
